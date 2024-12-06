@@ -1,6 +1,6 @@
 """
 A simplified Nelson's dead fuel moisture model as
-described in the following document: https://www.wfas.net/ffmc/docs/SimpleFFMC_Docs.pdf
+described in the following documents: https://www.wfas.net/ffmc/docs
 author: Tadas Nikonovas tadas.nik@gmail.com
 """
 
@@ -24,9 +24,9 @@ def nelson_fuel_moisture(
 
     prev_moist: Previous dead fuel moisture content. If None,
     it is assumed to be the equilibrium moisture content.
-    temp: Temperature in Celsius,
-    sol_rad: Solar radiation in W/m^2 during,
-    rel_hum: Relative humid ity in %,
+    temp: Temperature in Celsius (current hour).
+    sol_rad: Solar radiation in W/m^2 (current hour).
+    rel_hum: Relative humidity in % (current hour).
     rainfall: Rainfall in mm during the last hour.
     """
 
